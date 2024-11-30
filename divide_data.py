@@ -11,7 +11,7 @@ import random
 import shutil
 
 # 需要分割的图片目录
-SOURCE_IMG_DIR = 'C:\\Users\\Lenovo\\Desktop\\yolov8\\data'
+SOURCE_IMG_DIR = './data'
 
 # 识别分割图片类型"jpg", "png"
 file_type = False
