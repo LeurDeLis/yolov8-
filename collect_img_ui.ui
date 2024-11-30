@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>730</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_img">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>640</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_jpg">
+    <property name="geometry">
+     <rect>
+      <x>655</x>
+      <y>40</y>
+      <width>60</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+    background-color: rgba(232, 241, 248);
+    border-radius: 10px;
+}
+QPushButton:hover
+{
+    background-color: rgba(64, 70, 104, 100);
+    border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>保
+存
+img
+图
+片</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_png">
+    <property name="geometry">
+     <rect>
+      <x>655</x>
+      <y>260</y>
+      <width>60</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+    background-color: rgba(232, 241, 248);
+    border-radius: 10px;
+}
+QPushButton:hover
+{
+    background-color: rgba(64, 70, 104, 100);
+    border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>保
+存
+png
+图
+片</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_jpg</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>save_jpg_img()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>676</x>
+     <y>208</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>729</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_png</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>save_png_img()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>690</x>
+     <y>312</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>784</x>
+     <y>327</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>save_jpg_img()</slot>
+  <slot>save_png_img()</slot>
+ </slots>
+</ui>
